@@ -28,21 +28,34 @@ function playRound(playerSelection, computerSelection) {
         [-1, 1, 0],
     ]
 
-    if (winArray[player][computer] === -1) {
-        return `(You: ${options[player]}, PC: ${options[computer]}). You Lose!`
-    }
-
-    if (winArray[player][computer] === 1) {
-        return `(You: ${options[player]}, PC: ${options[computer]}). You Win!`
-    }
-
-    return `(You: ${options[player]}, PC: ${options[computer]}). Draw!`
+    return winArray[player][computer]
 }
 
-function playGame() {
-    const playerSelection = prompt()
-    const computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection));
+function playGame(playerSelection) {
+    if (Math.abs(score) >= 5) {
+        alert("Refresh page to start new game")
+        return
+    }
+
+    const computerSelection = getComputerChoice()
+    const result = playRound(playerSelection, computerSelection)
+
+    score += result
+    scoreContainer.innerHTML = score
+
+    switch (result) {
+        case -1: resultContainer.innerHTML += "<b>You Lose!</b>"; break;
+        case 0: resultContainer.innerHTML += "<b>You Win!</b>"; break;
+        case 1: resultContainer.innerHTML += "<b>Draw!</b>"; break;
+    }
+
+    resultContainer.innerHTML += `(You: ${playerSelection}, PC: ${computerSelection}). <br>`
+
+    if (Math.abs(score) < 5) return
+
+    resultContainer.innerHTML += `<b><u>You ${score == 5 ? "won" : "lost"} 5 times</u></b>`
 }
 
-for (let i = 0; i < 5; i++) playGame()
+let score = 0
+const resultContainer = document.querySelector(".result")
+const scoreContainer = document.querySelector(".score")
