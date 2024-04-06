@@ -35,7 +35,7 @@ Programs:
 > - Game representation of results:
 >   - Two archers on the arena
 >   - If result is draw both archers jump
->   - If not, both player shoot an arrow and the winner with hit other player
+>   - If not, both player shoot an arrow and the winner will hit the other player
 >   - Every hit decreases enemy hp
 
 ----------------------------------
