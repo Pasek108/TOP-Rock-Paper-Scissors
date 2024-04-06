@@ -10,7 +10,6 @@ See the [live demo](https://pasek108.github.io/TOP-Rock-Paper-Scissors/).
 ## Technologies
 Languages:
 - HTML
-- CSS
 - JS
   
 Programs:
@@ -26,7 +25,7 @@ Programs:
 
 ----------------------------------
 
-### Features
+## Features
 - **All of the project requirements**
 
 <br>
@@ -38,3 +37,17 @@ Programs:
 >   - If result is draw both archers jump
 >   - If not, both player shoot an arrow and the winner with hit other player
 >   - Every hit decreases enemy hp
+
+----------------------------------
+
+## Acknowledgements
+#### Images
+- [Arena background](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*q5XOBaFd_ykWlnMqd1Es3w.gif)
+- [Archer](https://quin-n.itch.io/free-platformer-character)
+
+#### Music and sounds
+- [Background music](https://freesound.org/people/CarlosCarty/sounds/581364/)
+- [Win fanfare](https://opengameart.org/content/win-fanfare)
+- [Player hurt](https://opengameart.org/content/man-hurt-sound-effect)
+- [Arrow shoot](https://opengameart.org/content/arrow-hit-twang)
+- [Jump](https://opengameart.org/content/8-bit-jump-1)
