@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock paper scissors</title>
-</head>
 
-<body>
-    <div>Choose option</div>
-    <button onclick="playGame('Rock')">Rock</button>
-    <button onclick="playGame('Paper')">Paper</button>
-    <button onclick="playGame('Scissors')">Scissors</button>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <img class="background" src="./Images/background.gif" alt="" />
+
+    <div class="pick-menu">
+      <img class="banner" src="./Images/banner.png" alt="" />
+
+      <h1>Choose option</h1>
+
+      <div class="buttons">
+        <button class="rock" onclick="playGame('Rock')">
+          <img class="icon" src="./Images/rock.png" alt="" />
+          <img class="border" src="./Images/border.png" alt="" />
+        </button>
+        <button class="paper" onclick="playGame('Paper')">
+          <img class="icon" src="./Images/paper.png" alt="" />
+          <img class="border" src="./Images/border.png" alt="" />
+        </button>
+        <button class="scissors" onclick="playGame('Scissors')">
+          <img class="icon" src="./Images/scissors.png" alt="" />
+          <img class="border" src="./Images/border.png" alt="" />
+        </button>
+      </div>
+    </div>
+
     <div>Current score: <span class="score">0</span></div>
-    <br>
+    <br />
     <div class="result"></div>
 
-    <script src="script.js"></script>
-</body>
+    <div class="canvas-wrapper">
+      <canvas id="canvas" width="240" height="144"></canvas>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js" integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/sound.js"></script>
+    <script src="./scripts/canvas.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>

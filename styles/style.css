@@ -1,0 +1,136 @@
+html {
+  font-family: "Jacquard 24", system-ui;
+  font-size: 16px;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  image-rendering: pixelated;
+}
+
+body {
+  background-color: #73efe8;
+}
+
+/* ------------------------------- pick menu ------------------------------- */
+.pick-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-top: 1vh;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 110%;
+}
+
+h1 {
+  color: #4d4429;
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  aspect-ratio: 1;
+}
+
+.rock {
+  background-color: #9c9c9c;
+}
+
+.rock:hover {
+  background-color: rgb(126, 126, 126);
+}
+
+.paper {
+  background-color: #ece8b9;
+}
+
+.paper:hover {
+  background-color: rgb(206, 202, 155);
+}
+
+.scissors {
+  background-color: #edd3e0;
+}
+
+.scissors:hover {
+  background-color: rgb(207, 181, 194);
+}
+
+.rock .icon {
+  width: 95%;
+}
+
+.paper .icon,
+.scissors .icon {
+  width: 80%;
+}
+
+button .border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------- canvas ------------------------------- */
+.canvas-wrapper {
+  position: absolute;
+  bottom: 4vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+canvas {
+  width: 15%;
+}
+
+.background {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .canvas-wrapper {
+    position: absolute;
+    bottom: 8vw;
+  }
+
+  canvas {
+    width: 30%;
+  }
+
+  .background {
+    left: -50%;
+    min-width: 200%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
