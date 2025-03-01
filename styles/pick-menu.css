@@ -1,0 +1,90 @@
+.pick-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-top: 1vh;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 110%;
+}
+
+h1 {
+  color: #4d4429;
+  font-size: 5.5vw;
+  line-height: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  min-width: 5rem;
+  aspect-ratio: 1;
+  border-radius: 24%;
+  transition: background-color 0.125s;
+}
+
+.rock {
+  background-color: #9c9c9c;
+}
+
+.rock:hover {
+  background-color: rgb(126, 126, 126);
+}
+
+.paper {
+  background-color: #ece8b9;
+}
+
+.paper:hover {
+  background-color: rgb(206, 202, 155);
+}
+
+.scissors {
+  background-color: #edd3e0;
+}
+
+.scissors:hover {
+  background-color: rgb(207, 181, 194);
+}
+
+.rock .icon {
+  width: 95%;
+}
+
+.paper .icon,
+.scissors .icon {
+  width: 80%;
+}
+
+button .border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}

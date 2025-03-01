@@ -1,0 +1,202 @@
+.action {
+  position: absolute;
+  top: calc(50% - 3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-top: 1vh;
+  line-height: 1;
+  color: white;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.675);
+  animation: 3s forwards ease fade-in-out;
+}
+
+/* ----------------------- result ----------------------- */
+.result {
+  flex-direction: column;
+  animation: 0.75s forwards ease fade-in;
+}
+
+.result .title {
+  color: transparent;
+  animation: 0.75s forwards 0.5s ease slide-bottom;
+}
+
+.result .play-again-info {
+  font-size: 1.5rem;
+  color: transparent;
+  animation: 0.75s forwards 1.25s ease slide-bottom;
+}
+
+/* ----------------------- attack ----------------------- */
+.vs {
+  position: relative;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.vs .text {
+  color: transparent;
+}
+
+.vs .bot {
+  position: absolute;
+  top: 0;
+  color: transparent;
+  animation: 0.75s forwards 0.5s ease slide-bottom;
+}
+
+/* ---------- left ---------- */
+.action .left {
+  position: relative;
+  width: 20%;
+  line-height: 1;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+.action .left .text {
+  animation: 0.75s forwards 0s ease slide-left;
+  color: transparent;
+}
+
+.action .left .top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 80%);
+  display: none;
+}
+
+.action .left .bot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  clip-path: polygon(100% 100%, 100% 40%, 0 80%, 0 100%);
+  display: none;
+}
+
+.action .left.cut .text {
+  animation: none;
+}
+
+.action .left.cut .top,
+.action .left.cut .bot {
+  display: block;
+  color: transparent;
+  animation: 0.75s forwards 0s ease slide-left, 0.75s forwards 1.5s ease-out slash;
+}
+
+/* ---------- right ---------- */
+.action .right {
+  position: relative;
+  width: 20%;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.action .right .text {
+  animation: 0.75s forwards 1s ease slide-right;
+  color: transparent;
+}
+
+.action .right .top {
+  position: absolute;
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 80%);
+  display: none;
+}
+
+.action .right .bot {
+  position: absolute;
+  bottom: 0;
+  clip-path: polygon(100% 100%, 100% 40%, 0 80%, 0 100%);
+  display: none;
+}
+
+.action .right.cut .text {
+  animation: none;
+}
+
+.action .right.cut .top,
+.action .right.cut .bot {
+  display: block;
+  color: transparent;
+  animation: 0.75s forwards 1s ease slide-right, 0.75s forwards 1.5s ease-out slash;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slash {
+  0% {
+    color: white;
+    margin: 0;
+  }
+  60% {
+    color: red;
+    margin: 0;
+  }
+  100% {
+    color: red;
+    margin: -0.25rem 0;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    margin-right: 1.5rem;
+    color: transparent;
+  }
+  100% {
+    margin-right: 0;
+    color: white;
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    margin-top: 1.5rem;
+    color: transparent;
+  }
+  100% {
+    margin-top: 0;
+    color: #ffd700;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    margin-left: 1.5rem;
+    color: transparent;
+  }
+  100% {
+    margin-left: 0;
+    color: white;
+  }
+}

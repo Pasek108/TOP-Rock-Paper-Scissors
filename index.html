@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/pick-menu.css"/>
+    <link rel="stylesheet" href="./styles/action.css" media="print" onload="this.media='all'"/>
   </head>
 
   <body>
@@ -22,32 +24,62 @@
       <h1>Choose option</h1>
 
       <div class="buttons">
-        <button class="rock" onclick="playGame('Rock')">
+        <button class="rock">
           <img class="icon" src="./Images/rock.png" alt="" />
           <img class="border" src="./Images/border.png" alt="" />
         </button>
-        <button class="paper" onclick="playGame('Paper')">
+
+        <button class="paper">
           <img class="icon" src="./Images/paper.png" alt="" />
           <img class="border" src="./Images/border.png" alt="" />
         </button>
-        <button class="scissors" onclick="playGame('Scissors')">
+
+        <button class="scissors">
           <img class="icon" src="./Images/scissors.png" alt="" />
           <img class="border" src="./Images/border.png" alt="" />
         </button>
       </div>
     </div>
 
-    <div>Current score: <span class="score">0</span></div>
-    <br />
-    <div class="result"></div>
+    <div class="action result" >
+      <div class="title">You win!</div>
+      <div class="play-again-info">Press '"Paper button' to play again</div>
+    </div>
+
+    <div class="action attack" hidden>
+      <div class="left">
+        <span class="text">Scissors</span>
+        <div class="top">Scissors</div>
+        <div class="bot">Scissors</div>
+      </div>
+
+      <div class="vs">
+        <span class="text">VS</span>
+        <div class="bot">VS</div> 
+      </div>
+
+      <div class="right cut">
+        <span class="text">Paper</span>
+        <div class="top">Paper</div>
+        <div class="bot">Paper</div>
+      </div>
+    </div>
+
+    <div class="lives">
+      <img class="healthbar player" src="./Images/health-bar-5.png" alt="" />
+      <img class="heart" src="./Images/heart-full.png" alt="" />
+      <img class="healthbar enemy" src="./Images/health-bar-5.png" alt="" />
+    </div>
 
     <div class="canvas-wrapper">
-      <canvas id="canvas" width="240" height="144"></canvas>
+      <canvas id="canvas" width="230" height="144"></canvas>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js" integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/Frog.js"></script>
     <script src="./scripts/sound.js"></script>
     <script src="./scripts/canvas.js"></script>
+    <script src="./scripts/Action.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
