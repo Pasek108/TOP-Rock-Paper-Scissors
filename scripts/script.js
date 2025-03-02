@@ -28,7 +28,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function playGame(playerSelection) {
-    rock_button.disabled = true
+  rock_button.disabled = true
   paper_button.disabled = true
   scissors_button.disabled = true
 

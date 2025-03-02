@@ -56,6 +56,7 @@
 /* ---------- left ---------- */
 .action .left {
   position: relative;
+  flex-grow: 1;
   width: 20%;
   line-height: 1;
   text-align: right;
@@ -97,6 +98,7 @@
 /* ---------- right ---------- */
 .action .right {
   position: relative;
+  flex-grow: 1;
   width: 20%;
   line-height: 1;
   text-transform: capitalize;
@@ -201,5 +203,15 @@
   100% {
     margin-left: 0;
     color: white;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .action {
+    font-size: 2rem;
+  }
+  
+  .result .play-again-info {
+    font-size: 1rem;
   }
 }
