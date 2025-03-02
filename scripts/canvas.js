@@ -8,11 +8,11 @@ const canvas = document.getElementById("canvas")
 const ctx = canvas.getContext("2d")
 ctx.imageSmoothingEnabled = false
 
-const player_healtbar = document.querySelector(".healthbar.player")
+const player_healthbar = document.querySelector(".healthbar.player")
 const player = new Frog(ctx, true, getRandomInt(6))
-let player_health = 1;
+let player_health = 5;
 
-const enemy_healtbar = document.querySelector(".healthbar.enemy")
+const enemy_healthbar = document.querySelector(".healthbar.enemy")
 const enemy = new Frog(ctx, false, getRandomInt(6))
 let enemy_health = 5;
 
@@ -46,13 +46,18 @@ function playerGotHit() {
       croak.play()
 
       player_health--
-      player_healtbar.src = `Images/health-bar-${player_health}.png`
+      player_healthbar.src = `images/health-bar/health-bar-${player_health}.png`
 
       if (player_health == 0) {
         player.startAnimation(Frog.animations.death)
-        setTimeout(() => puff.play(), 300)
+        
         setTimeout(() => {
-          background_loop.pause()
+          puff.play()
+          result_info.showResultInfo(false)
+        }, 300)
+
+        setTimeout(() => {
+          background_loop.stop()
           lose_melody.play()
         }, 1000)
       }
@@ -71,13 +76,18 @@ function enemyGotHit() {
       croak.play()
 
       enemy_health--
-      enemy_healtbar.src = `Images/health-bar-${enemy_health}.png`
+      enemy_healthbar.src = `images/health-bar/health-bar-${enemy_health}.png`
 
       if (enemy_health == 0) {
         enemy.startAnimation(Frog.animations.death)
-        setTimeout(() => puff.play(), 300)
+
         setTimeout(() => {
-          background_loop.pause()
+          result_info.showResultInfo(true)
+          puff.play()
+        }, 300)
+
+        setTimeout(() => {
+          background_loop.stop()
           win_melody.play()
         }, 1000)
       }

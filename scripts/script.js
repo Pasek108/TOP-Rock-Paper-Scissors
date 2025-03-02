@@ -35,7 +35,7 @@ function playGame(playerSelection) {
   const computerSelection = getComputerChoice()
   const result = playRound(playerSelection, computerSelection)
 
-  action.showAction(playerSelection, computerSelection, result)
+  attack_info.showAttackInfo(playerSelection, computerSelection, result)
 
   switch (result) {
     case -1: playerGotHit(); break
@@ -49,13 +49,35 @@ function playGame(playerSelection) {
   }, 3000)
 }
 
-const action = new Action()
+const attack_info = new AttackInfo()
+const result_info = new ResultInfo()
 
 const rock_button = document.querySelector(".rock")
-rock_button.addEventListener("click", () => playGame("rock"))
+rock_button.addEventListener("click", () => {
+  if (player_health == 0 || enemy_health == 0) return
+  playGame("rock")
+})
 
 const paper_button = document.querySelector(".paper")
-paper_button.addEventListener("click", () => playGame("paper"))
+paper_button.addEventListener("click", () => {
+  if (player_health == 0 || enemy_health == 0) {
+    result_info.hideResultInfo()
+    player_health = 5
+    enemy_health = 5
+    player_healthbar.src = `images/health-bar/health-bar-${player_health}.png`
+    enemy_healthbar.src = `images/health-bar/health-bar-${enemy_health}.png`
+    player.startAnimation(Frog.animations.idle)
+    enemy.startAnimation(Frog.animations.idle)
+    win_melody.stop()
+    lose_melody.stop()
+    background_loop.play()
+    return
+  }
+  playGame("paper")
+})
 
 const scissors_button = document.querySelector(".scissors")
-scissors_button.addEventListener("click", () => playGame("scissors"))
+scissors_button.addEventListener("click", () => {
+  if (player_health == 0 || enemy_health == 0) return
+  playGame("scissors")
+})

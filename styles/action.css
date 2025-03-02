@@ -22,13 +22,15 @@
 }
 
 .result .title {
-  color: transparent;
+  color: #ffd700;
+  opacity: 0;
   animation: 0.75s forwards 0.5s ease slide-bottom;
 }
 
 .result .play-again-info {
   font-size: 1.5rem;
-  color: transparent;
+  color: white;
+  opacity: 0;
   animation: 0.75s forwards 1.25s ease slide-bottom;
 }
 
@@ -46,7 +48,8 @@
 .vs .bot {
   position: absolute;
   top: 0;
-  color: transparent;
+  color: #ffd700;
+  opacity: 0;
   animation: 0.75s forwards 0.5s ease slide-bottom;
 }
 
@@ -181,12 +184,12 @@
 
 @keyframes slide-bottom {
   0% {
-    margin-top: 1.5rem;
-    color: transparent;
+    transform: translateY(1.5rem);
+    opacity: 0;
   }
   100% {
-    margin-top: 0;
-    color: #ffd700;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

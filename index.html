@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content='Solution by Artur Pas, for "Rock Paper Scissors" project from The Odin Project (TOP) full-stack curriculum '>
+    <meta name="keywords" content="Frogs, Frogs fight, Frog arena, Rock Paper Scissors">
+    <meta name="author" content="Artur Pas">
+
     <title>Rock paper scissors</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,32 +20,32 @@
   </head>
 
   <body>
-    <img class="background" src="./Images/background.gif" alt="" />
+    <img class="background" src="./images/background.gif" alt="" />
 
     <div class="pick-menu">
-      <img class="banner" src="./Images/banner.png" alt="" />
+      <img class="banner" src="./images/banner.png" alt="" />
 
       <h1>Choose option</h1>
 
       <div class="buttons">
         <button class="rock">
-          <img class="icon" src="./Images/rock.png" alt="" />
-          <img class="border" src="./Images/border.png" alt="" />
+          <img class="icon" src="./images/rock.png" alt="" />
+          <img class="border" src="./images/border.png" alt="" />
         </button>
 
         <button class="paper">
-          <img class="icon" src="./Images/paper.png" alt="" />
-          <img class="border" src="./Images/border.png" alt="" />
+          <img class="icon" src="./images/paper.png" alt="" />
+          <img class="border" src="./images/border.png" alt="" />
         </button>
 
         <button class="scissors">
-          <img class="icon" src="./Images/scissors.png" alt="" />
-          <img class="border" src="./Images/border.png" alt="" />
+          <img class="icon" src="./images/scissors.png" alt="" />
+          <img class="border" src="./images/border.png" alt="" />
         </button>
       </div>
     </div>
 
-    <div class="action result" >
+    <div class="action result" hidden>
       <div class="title">You win!</div>
       <div class="play-again-info">Press '"Paper button' to play again</div>
     </div>
@@ -66,9 +70,9 @@
     </div>
 
     <div class="lives">
-      <img class="healthbar player" src="./Images/health-bar-5.png" alt="" />
-      <img class="heart" src="./Images/heart-full.png" alt="" />
-      <img class="healthbar enemy" src="./Images/health-bar-5.png" alt="" />
+      <img class="healthbar player" src="./images/health-bar/health-bar-5.png" alt="" />
+      <img class="heart" src="./images//health-bar/heart-full.png" alt="" />
+      <img class="healthbar enemy" src="./images/health-bar/health-bar-5.png" alt="" />
     </div>
 
     <div class="canvas-wrapper">
@@ -79,7 +83,8 @@
     <script src="./scripts/Frog.js"></script>
     <script src="./scripts/sound.js"></script>
     <script src="./scripts/canvas.js"></script>
-    <script src="./scripts/Action.js"></script>
+    <script src="./scripts/AttackInfo.js"></script>
+    <script src="./scripts/ResultInfo.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

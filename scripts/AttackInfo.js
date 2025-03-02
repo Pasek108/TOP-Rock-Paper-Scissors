@@ -1,6 +1,6 @@
 "use strict"
 
-class Action {
+class AttackInfo {
   constructor() {
     this.container = document.querySelector(".action.attack")
 
@@ -19,7 +19,7 @@ class Action {
     }
   }
 
-  showAction(player_pick, enemy_pick, result) {
+  showAttackInfo(player_pick, enemy_pick, result) {
     this.left.text.textContent = player_pick
     this.left.top.textContent = player_pick
     this.left.bot.textContent = player_pick

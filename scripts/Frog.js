@@ -10,12 +10,12 @@ class Frog {
   }
   
   sprites = [
-    { size: [432, 240], src: "Images/Frogs/ToxicFrogBlueBlue_Sheet.png" },
-    { size: [432, 240], src: "Images/Frogs/ToxicFrogBlueBrown_Sheet.png" },
-    { size: [432, 240], src: "Images/Frogs/ToxicFrogGreenBlue_Sheet.png" },
-    { size: [432, 240], src: "Images/Frogs/ToxicFrogGreenBrown_Sheet.png" },
-    { size: [432, 240], src: "Images/Frogs/ToxicFrogPurpleBlue_Sheet.png" },
-    { size: [432, 240], src: "Images/Frogs/ToxicFrogPurpleWhite_Sheet.png" },
+    { size: [432, 240], src: "images/frogs/ToxicFrogBlueBlue_Sheet.png" },
+    { size: [432, 240], src: "images/frogs/ToxicFrogBlueBrown_Sheet.png" },
+    { size: [432, 240], src: "images/frogs/ToxicFrogGreenBlue_Sheet.png" },
+    { size: [432, 240], src: "images/frogs/ToxicFrogGreenBrown_Sheet.png" },
+    { size: [432, 240], src: "images/frogs/ToxicFrogPurpleBlue_Sheet.png" },
+    { size: [432, 240], src: "images/frogs/ToxicFrogPurpleWhite_Sheet.png" },
   ]
 
   frame_width = 48
