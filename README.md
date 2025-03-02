@@ -72,7 +72,7 @@ Programs:
 - [GIMP](https://www.gimp.org)
 
 ## Features
-## Project requirements
+### Project requirements
 - ✅ Computer randomly picks "rock", "paper", or "scissors"
 - ✅ Determine round winner and update score
 - ✅ Play 5 rounds and declare a winner
