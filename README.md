@@ -5,7 +5,7 @@
   </strong>
 </p>
 <div align="center">
-  <a href="https://www.frontendmentor.io/home">
+  <a href="https://www.theodinproject.com">
     <img src="_for_readme/banner.png">
   </a>
 </div>
