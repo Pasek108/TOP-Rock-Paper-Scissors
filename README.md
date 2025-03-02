@@ -104,12 +104,11 @@ Programs:
 > - Saving state to localStorage
 
 ## Setup
-- Use [live version](https://pasek108.github.io/FM-RockPaperScissors/).
+- Use [live version](https://pasek108.github.io/TOP-Rock-Paper-Scissors/).
 
 - Download this repository and:
   - Open project in VSCode
   - Run [VSCode live server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-  - Or open project in Prepros
 
 ## Acknowledgements
 ### Images
