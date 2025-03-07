@@ -18,12 +18,17 @@ class Frog {
     { size: [432, 240], src: "images/frogs/ToxicFrogPurpleWhite_Sheet.png" },
   ]
 
+  croak_sound = new Howl({ src: ['sounds/croak.mp3'], volume: 0.25 })
+  puff_sound = new Howl({ src: ['sounds/puff.mp3'], volume: 1 })
+
   frame_width = 48
   frame_height = 48
 
   animation_stop = true
   animation_frame = 0
   animation = null
+
+  health = 5
 
   constructor(ctx, is_player, sprite_id) {
     this.ctx = ctx;
