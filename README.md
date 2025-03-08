@@ -126,7 +126,25 @@ Programs:
 
 ## User interface
 
-### Arena  
-![arena](/_for_readme/preview.png)  
-  
+### Pick Menu  
+![Pick Menu](/_for_readme/UI/pick-menu.png)  
+At the top, there is a menu with three options - rock, paper, and scissors, depicted as images. To play a round, the user must click on one of the options.  
+
+---
+
+### Frogs  
+![Frogs](/_for_readme/UI/frogs.png)  
+The game state is reflected by two frogs: the player’s frog on the left and the enemy frog on the right. Below them, a health bar represents their remaining health.  
+
+---
+
+### Attack  
+![Attack](/_for_readme/UI/attack.png)  
+When the user selects an option, the round is played, and the result is displayed. The losing pick is slashed, and the losing frog gets hit, losing an unit of health.  
+
+---
+
+### Winner  
+![Winner](/_for_readme/UI/winner.png)  
+If one of the frogs loses all its health, it disappears, and a win or lose message, along with music, is played.  
 
