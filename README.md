@@ -12,13 +12,6 @@
 
 <br>
 
-> [!CAUTION]  
-> <h4>Please, don't look at my solutions until you have completed it yourself.</h4>
-> Challenges like these are an opportunity to improve by coming up with your own solutions. Take your time and think about your approach.  
-> If you can't complete a challenge, skip it and come back to it later. Only look at someone else's solutions as a last resort, and treat it as a defeat.
-
-<br>
-
 # Table of Contents
 * [The Odin Project :thinking:](#the-odin-project-thinking)
   * [What is it](#what-is-it)
@@ -30,7 +23,6 @@
   * [Setup](#setup)
 * [Details :scroll:](#details-scroll)
   * [User interface](#user-interface)
-  * [Performance](#performance)
 
 <br>
 
@@ -113,13 +105,13 @@ Programs:
 ## Acknowledgements
 ### Images
 - [Arena background](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*q5XOBaFd_ykWlnMqd1Es3w.gif)
+- [Paper scroll banner](https://www.vecteezy.com/vector-art/49315197-8-bit-pixel-art-medieval-paper-scroll-parchment)
 - [Frogs](https://eduardscarpato.itch.io/toxic-frog-animations-pixel-art-2d-free)
 - [Border](https://gx310.itch.io/pxiel-art-ui-borders)
-- [Paper scroll banner](https://www.vecteezy.com/vector-art/49315197-8-bit-pixel-art-medieval-paper-scroll-parchment)
 - [Rock icon](https://deepai.org/machine-learning-model/text2img)
 - [Paper icon](https://deepai.org/machine-learning-model/text2img)
 - [Scissors icon](https://deepai.org/machine-learning-model/text2img)
-- [Grave mage](https://deepai.org/machine-learning-model/text2img)
+- [Grave image](https://deepai.org/machine-learning-model/text2img)
 
 ### Music and sounds
 - [Background music](https://freesound.org/people/CarlosCarty/sounds/581364/)
